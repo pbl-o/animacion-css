@@ -168,87 +168,86 @@ nav {
   display: none;
 }
 
-aside{
-grid-area: aside;
-display: flex;
-flex-direction: column;
-justify-content: center;
-padding-left:.45rem;
-padding-right: 1.35rem;
-align-items: stretch;
-letter-spacing: 5px;
-font-size: 1.4rem;
-font-weight: 600;
+/*ASIDE/
+/*Filtros*/
+aside {
+  grid-area: aside;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 0.45rem;
+  padding-right: 1.35rem;
+  align-items: stretch;
+  letter-spacing: 5px;
+  font-size: 1.4rem;
+  font-weight: 600;
 }
 
-.aside-message{
+/*Mensaje de Bienvenida*/
+.aside-message {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 1rem;
-
-
- 
 }
-.aside-message img{
+/*botón interactivo*/
+.aside-message img {
   width: 4.5rem;
   opacity: 0;
-  transition: opacity .4s ease-in-out;
-
+  transition: opacity 0.4s ease-in-out;
 }
 
-.aside-message img:hover{
+.aside-message img:hover {
   opacity: 1;
   cursor: pointer;
-
+}
+/*filtro de búsqueda*/
+.filter-cat {
+  padding: 1rem;
+  margin: 0.7rem 0;
+  border-radius: 5px;
+  text-align: center;
+  border: #f1f1f1 1px solid;
+  color: #444;
+  font-size: 0.8rem;
+  background: linear-gradient(60deg, #f6f6f6 1%, #fff 100%);
 }
 
-
-.filter-cat{
-    padding:1rem ;
-    margin: .7rem 0;
-    border-radius: 5px;
-    text-align: center;
-    border: #f1f1f1 1px solid;
-    color: #444;
-    font-size: .8rem;
-    background: linear-gradient(60deg, #f6f6f6 1%, #fff 100%);
-   
-}  
-
-.filter-cat > .selector{
+.filter-cat > .selector {
   display: flex;
   justify-content: center;
-  gap: .5rem;
+  gap: 0.5rem;
 }
 
-.filter-cat img{
+.filter-cat img {
   filter: invert(100%);
 }
-
-.category-selection{
+/*Categoría seleccionada*/
+.category-selection {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: .5rem;
-  margin: .5rem 25%;
+  padding: 0.5rem;
+  margin: 0.5rem 25%;
   background-color: #fff;
   border: 1px solid #eee;
   border-radius: 5px;
-  opacity: .9;
-  transition: all .3s ease-in-out;
+  opacity: 0.9;
+  transition: all 0.3s ease-in-out;
 }
 
-.category-selection:hover{
+.category-selection:hover {
   background-color: #bbb;
   box-shadow: inset 1px 1px 10px #c1c1c1;
   cursor: pointer;
-  filter:invert(100%);
-  transform: translateY(5px);
+  filter: invert(85%);
+  transform: translateY(-3px) scale(.95);
 }
 
 
+/*MAIN*/
+/*Galería de productos*/
 main{
 grid-area: main;
     height: 100%;
