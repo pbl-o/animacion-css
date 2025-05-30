@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Danfo&family=Exile&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lobster&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Share+Tech&family=WDXL+Lubrifont+TC&display=swap');
+/*Font + reset*/
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Danfo&family=Exile&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lobster&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Share+Tech&family=WDXL+Lubrifont+TC&display=swap");
 
 * {
   margin: 0;
@@ -6,42 +7,40 @@
   box-sizing: border-box;
 }
 
-body{
-    font-family: "WDXL Lubrifont TC", sans-serif;
-    color:#333;
+body {
+  font-family: "WDXL Lubrifont TC", sans-serif;
+  color: #333;
 }
 
-
-
-.container{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas: 
-    'nav'
-    'aside'
-    'main'
-    'footer';
-    height: 100dvh;
+/*Grid CSS layout*/
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "nav"
+    "aside"
+    "main"
+    "footer";
+  height: 100dvh;
 }
 
-nav{
-grid-area: nav;
-padding: .5rem;
-
+/*Barra de navegación*/
+nav {
+  grid-area: nav;
+  padding: 0.5rem;
 }
 
-    .brand-container{
-    padding-top: 1rem;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-
+.brand-container {
+  padding-top: 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
-/*Animación título*/
+/*Animación de logo sub-título*/
 
-.teclas{
-    padding: .2rem;
+.teclas {
+  padding: 0.2rem;
 }
 .tecla-blanca {
   display: inline-block;
@@ -50,7 +49,7 @@ padding: .5rem;
   border: 1px solid black;
   background-color: #fff;
   border-radius: 3px;
-  padding: 1rem .21rem;
+  padding: 1rem 0.21rem;
 }
 .tecla-negra {
   display: inline-block;
@@ -60,7 +59,7 @@ padding: .5rem;
   background-color: #000;
   color: #333;
   border-radius: 3px;
-  padding: 1rem .21rem;
+  padding: 1rem 0.21rem;
 }
 
 .teclas > :nth-child(1) {
@@ -103,7 +102,6 @@ padding: .5rem;
   animation-delay: 2.5s;
 } /*e*/
 
-
 @keyframes tecleoblanco {
   from {
     transform: translateY(0) scale(0.9);
@@ -124,57 +122,50 @@ padding: .5rem;
     box-shadow: 2px 2px 3px black;
   }
 }
-
-/*Fin animación*/
 /*Fin animación*/
 
-
-.brand-icon{
-    filter:invert(100%);
-    width: 1.9rem;
-    transition: .2s ease-in-out;
+.brand-icon {
+  filter: invert(100%);
+  width: 1.9rem;
+  transition: 0.2s ease-in-out;
 }
 
-.brand-icon:hover{
-    filter:invert(30%);
-    transform: scale(1.1);
-    cursor: pointer;
-    width: 1.9rem;
+.brand-icon:hover {
+  filter: invert(30%);
+  transform: scale(1.1);
+  cursor: pointer;
+  width: 1.9rem;
 }
 
-
-
-.menu-desktop{
-list-style-type: none;
-margin-top:1rem;
-text-align: center;
+.menu-desktop {
+  list-style-type: none;
+  margin-top: 1rem;
+  text-align: center;
 }
 
-.menu-desktop-item{
-    border: #c1c1c1 1px solid;
-    padding: .5rem;
-    margin: .9rem;
-    border-radius: 5px;
-    opacity: .9; 
-    transition: all .2s ease-in-out;
+.menu-desktop-item {
+  border: #c1c1c1 1px solid;
+  padding: 0.5rem;
+  margin: 0.9rem;
+  border-radius: 5px;
+  opacity: 0.9;
+  transition: all 0.2s ease-in-out;
 }
 
-.menu-desktop-item:hover{ 
-transform: translateY(-5px);
-box-shadow: inset 1px 1px 10px #c1c1c1;
-background-color: #bbb;
-filter: invert(100%);
-    
+.menu-desktop-item:hover {
+  transform: translateY(-5px);
+  box-shadow: inset 1px 1px 10px #c1c1c1;
+  background-color: #bbb;
+  filter: invert(100%);
 }
 
-.menu-desktop a{
-text-decoration: none;
-color: #333;
+.menu-desktop a {
+  text-decoration: none;
+  color: #333;
 }
 
-
-.menu-desktop.desktop{
-    display:none;
+.menu-desktop.desktop {
+  display: none;
 }
 
 aside{
